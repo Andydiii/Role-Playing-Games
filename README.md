@@ -53,35 +53,35 @@ consumes a Character and performs a level up of the Character. The level should 
 
 Samples:
 
--c1 = Character("Sloan", 12, 10, 11)
--e1 = Character("E1", 2, 5, 10)
--print(c1)
--print(e1)
--c1.cast_spell(20, 10, e1) => None
--c1.level_up()
--print(c1)
--d1 = Character("C1", 10, 10, 10)
--d2 = Character("C2", 1, 10, 10)
+c1 = Character("Sloan", 12, 10, 11)
+e1 = Character("E1", 2, 5, 10)
+print(c1)
+print(e1)
+c1.cast_spell(20, 10, e1) => None
+c1.level_up()
+print(c1)
+d1 = Character("C1", 10, 10, 10)
+d2 = Character("C2", 1, 10, 10)
 d3 = Character("C3", 20, 20, 10)
 e2 = Character("E2", 20, 20, 10)
 L = [d1, d2, d3]
 all_punch(L, e2) => None
-and the following is printed
 
-Sloan
-Level: 1
-Strength: 12
-HP: 10/10
-MP: 11/11
-E1
-Level: 1
-Strength: 2
-HP: 5/5
-MP: 10/10
-Not enough MP
-Sloan
-Level: 2
-Strength: 14
-HP: 12/12
-MP: 13/13
-and all of d1, d2, d3 have levelled up and e2's hp is now 0.
+and the following is printed:  
+Sloan  
+Level: 1  
+Strength: 12  
+HP: 10/10  
+MP: 11/11  
+E1  
+Level: 1  
+Strength: 2  
+HP: 5/5  
+MP: 10/10  
+Not enough MP  
+Sloan  
+Level: 2  
+Strength: 14  
+HP: 12/12  
+MP: 13/13  
+and all of d1, d2, d3 have levelled up and e2's hp is now 0.  
